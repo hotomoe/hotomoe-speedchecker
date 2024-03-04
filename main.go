@@ -25,7 +25,8 @@ type IfconfigInfo struct {
 func main() {
 	http.DefaultTransport.(*http.Transport).TLSClientConfig = &tls.Config{InsecureSkipVerify: true}
 
-	hosts := []string{"hoto.moe", "jp1.hotomoe.net", "us1.hotomoe.net", "jp1-cf.hotomoe.net", "us1-cf.hotomoe.net"}
+	hosts := []string{"hoto.moe", "test1.enhawiki.kr", "test1-cf.enhawiki.kr", "jp1.hotomoe.net", "jp1-cf.hotomoe.net", "us1.hotomoe.net", "us1-cf.hotomoe.net"}
+	names := []string{"Current (HOTOUSNET Cache)", "Korea", "Korea (Cloudflare)", "Japan", "Japan (Cloudflare)", "United States CA", "United States CA (Cloudflare)"}
 
 	info, err := getIfconfigInfo("")
 	if err == nil {
@@ -38,8 +39,9 @@ func main() {
 
 	println()
 
-	for _, host := range hosts {
+	for index, host := range hosts {
 		println("Host:", host)
+		println("Name:", names[index])
 
 		ip := getIpAddress(host)
 		println("IP:", ip)
