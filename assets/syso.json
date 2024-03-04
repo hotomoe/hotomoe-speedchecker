@@ -1,0 +1,33 @@
+{
+  "Icons": [
+    {
+      "ID": 1,
+      "Path": "assets/icon.ico"
+    }
+  ],
+  "VersionInfos": [
+    {
+      "ID": 1,
+      "StringTables": [
+        {
+          "Language": "0409",
+          "Charset": "04b0",
+          "Strings": {
+            "CompanyName": "hotomoe",
+            "FileDescription": "hotomoe network checker",
+            "InternalName": "hotomoe-speedchecker",
+            "LegalCopyright": "\u00a9 hotomoe, All rights reserved.",
+            "OriginalFilename": "hotomoe-network-checker.exe",
+            "ProductName": "hotomoe-network-checker"
+          }
+        }
+      ],
+      "Translations": [
+        {
+          "Language": "0409",
+          "Charset": "04b0"
+        }
+      ]
+    }
+  ]
+}
